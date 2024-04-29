@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, camel_case_types
+// ignore_for_file: prefer_const_constructors, camel_case_types, prefer_const_literals_to_create_immutables
 
 import 'dart:ui';
 
@@ -52,53 +52,76 @@ class _sheduletimeState extends State<sheduletime> {
           Divider(
             color: Colors.white,
           ),
-           Container(
-                height: 80,
-                width: 360,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 60,
+                width: 320,
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(25),
+                  color: Colors.grey[400],
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 50, top: 10),
+                      child: Text(
+                        "Choose your date",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400, fontSize: 20),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 50, top: 10),
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.calendar_today_outlined)),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20,top: 40),
+            child: Text(
+              "Choose your slote",
+              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 20,color: Colors.white),
+            ),
+          ),
+          //inkwell
+        ]),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 50),
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Payment1()));
+              },
+              child: Container(
+                height: 70,
+                width: 200,
                 decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(25),
                   color: Colors.grey[400],
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 50, top: 20),
+                  padding: const EdgeInsets.only(left: 45, top: 15),
                   child: Text(
-                    "choose your",
-                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 28),
+                    "continue",
+                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 28),
                   ),
                 ),
               ),
-              //inkwell
-               Padding(
-                 padding: const EdgeInsets.all(8.0),
-
-                 child: InkWell(
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Payment1()));
-                  },
-                   child: Container(
-                    height: 70,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.rectangle,
-                      borderRadius: BorderRadius.circular(25),
-                      color: Colors.grey[400],
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 45, top: 15),
-                      child: Text(
-                        "continue",
-                        style: TextStyle(fontWeight: FontWeight.w800, fontSize: 28),
-                      ),
-                    ),
-                                 ),
-                 ),
-               ),
-
-        ]),
-      ]
-      ),
-    
+            ),
+          ),
+        ),
+      ]),
     );
   }
 }
