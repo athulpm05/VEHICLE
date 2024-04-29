@@ -2,9 +2,7 @@
 
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_application_4/user/manufacture.dart';
 import 'package:flutter_application_4/user/timeshedule.dart';
 
@@ -48,7 +46,7 @@ class _Service1State extends State<Service1> {
                 Navigator.pop(context);
               },
               icon: Icon(Icons.arrow_back_ios),
-              iconSize: 40,
+              iconSize: 23,
               color: Colors.white,
             ),
           ),
@@ -78,13 +76,13 @@ class _Service1State extends State<Service1> {
                 padding: const EdgeInsets.only(left: 22, top: 30),
                 child: Container(
                   height: 80,
-                  width: 360,
+                  width: 320,
                   decoration: BoxDecoration(
                       shape: BoxShape.rectangle,
                       color: Colors.grey[400],
                       borderRadius: BorderRadius.circular(20)),
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 45, top: 10),
+                    padding: const EdgeInsets.only(left: 20, top: 10),
                     child: Column(
                       children: [
                         Row(
@@ -96,13 +94,13 @@ class _Service1State extends State<Service1> {
                                   "5+ Year",
                                   style: TextStyle(
                                       fontWeight: FontWeight.w600,
-                                      fontSize: 22),
+                                      fontSize: 20),
                                 ),
                                 Text(
                                   "Experience",
                                   style: TextStyle(
                                       fontWeight: FontWeight.w600,
-                                      fontSize: 22),
+                                      fontSize: 20),
                                 ),
                               ],
                             ),
@@ -115,13 +113,13 @@ class _Service1State extends State<Service1> {
                                     children: [
                                       Icon(
                                         Icons.currency_rupee_sharp,
-                                        size: 30,
+                                        size: 25,
                                       ),
                                       Text(
                                         "100",
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
-                                            fontSize: 22),
+                                            fontSize: 20),
                                       ),
                                     ],
                                   ),
@@ -129,7 +127,7 @@ class _Service1State extends State<Service1> {
                                     "Minimum Fee",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w600,
-                                        fontSize: 22),
+                                        fontSize: 20),
                                   ),
                                 ],
                               ),
@@ -147,7 +145,7 @@ class _Service1State extends State<Service1> {
           Padding(
             padding: const EdgeInsets.all(10),
             child: Container(
-              height: 420,
+              height: 350,
               width: 400,
               decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
@@ -155,7 +153,7 @@ class _Service1State extends State<Service1> {
                   borderRadius: BorderRadius.circular(20)),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 30,
+                padding: const EdgeInsets.only(top: 10,
                 left: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,29 +161,29 @@ class _Service1State extends State<Service1> {
                     Text(
                       "Manufacture",
                       style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 20,
                           fontWeight: FontWeight.w900,
                           ),
                     ),
                     Text(
                       "All vechile mechanic",
                       style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 20,
                           fontWeight: FontWeight.w900,
                           ),
                     ),
                     //icons
                     Padding(
-                      padding: const EdgeInsets.only(top: 10),
+                      padding: const EdgeInsets.only(top: 5),
                       child: Column(
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.circle),
+                              Icon(Icons.circle,size: 15,),
                               Text(
                                 " Tvs 2 Wheeler",
                                 style: TextStyle(
-                                    fontSize: 22,
+                                    fontSize: 20,
                                     fontWeight: FontWeight.w500,
                                     letterSpacing: 2),
                               ),
@@ -193,14 +191,14 @@ class _Service1State extends State<Service1> {
                           ),
                           //2nd
                           Padding(
-                            padding: const EdgeInsets.only(top: 10),
+                            padding: const EdgeInsets.only(top: 5),
                             child: Row(
                               children: [
-                                Icon(Icons.circle),
+                                Icon(Icons.circle,size: 15,),
                                 Text(
                                   " Yamaha",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 2),
                                 ),
@@ -209,14 +207,14 @@ class _Service1State extends State<Service1> {
                           ),
                           //3rd
                           Padding(
-                            padding: const EdgeInsets.only(top: 10),
+                            padding: const EdgeInsets.only(top: 5),
                             child: Row(
                               children: [
-                                Icon(Icons.circle),
+                                Icon(Icons.circle,size: 15,),
                                 Text(
                                   " Honda 2 wheeler",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 2),
                                 ),
@@ -225,14 +223,14 @@ class _Service1State extends State<Service1> {
                           ),
                           //4th
                           Padding(
-                            padding: const EdgeInsets.only(top: 10,),
+                            padding: const EdgeInsets.only(top: 5,),
                             child: Row(
                               children: [
-                                Icon(Icons.circle),
+                                Icon(Icons.circle,size: 15,),
                                 Text(
                                   " Suzuki",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 2),
                                 ),
@@ -241,25 +239,25 @@ class _Service1State extends State<Service1> {
                           ),
                           //others service
                           Padding(
-                            padding: const EdgeInsets.only(right: 230,top: 10),
+                            padding: const EdgeInsets.only(right: 230,top: 5),
                             child: Text(
                               "Other service",
                               style: TextStyle(
-                                  fontSize: 22,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.w900,
                                   ),
                             ),
                           ),
                           //5th
                           Padding(
-                            padding: const EdgeInsets.only(top: 10,),
+                            padding: const EdgeInsets.only(top: 5,),
                             child: Row(
                               children: [
-                                Icon(Icons.circle),
+                                Icon(Icons.circle,size: 15,),
                                 Text(
                                   " 2 Wheeler service",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 2),
                                 ),
@@ -267,14 +265,14 @@ class _Service1State extends State<Service1> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 10,),
+                            padding: const EdgeInsets.only(top: 5,),
                             child: Row(
                               children: [
-                                Icon(Icons.circle),
+                                Icon(Icons.circle,size: 15,),
                                 Text(
                                   " Washing",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 2),
                                 ),
@@ -295,7 +293,7 @@ class _Service1State extends State<Service1> {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 20,top: 20),
+                  padding: const EdgeInsets.only(left: 30,top: 20),
 //inkwel button
                   child: InkWell(
 
@@ -305,17 +303,16 @@ class _Service1State extends State<Service1> {
                     },
 
                     child: Container(
-                      height: 70,
-                      width: 170,
+                      height: 60,
+                      width: 150,
                       decoration: BoxDecoration(
                         shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(25),
                         color: Colors.grey[400],
                       ),
                     
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 30),
+                      child: Center(
                         child: Text("Quick Services",style: 
-                        TextStyle(fontWeight: FontWeight.w900,fontSize: 25),),
+                        TextStyle(fontWeight: FontWeight.w900,fontSize: 20),),
                       ),
                     ),
                   ),
@@ -323,7 +320,7 @@ class _Service1State extends State<Service1> {
 
                 //inkwellbutton 2container
                  Padding(
-              padding: const EdgeInsets.only(left: 20,top: 20),
+              padding: const EdgeInsets.only(left: 5,top: 20),
               
               child: InkWell(
                 onTap: () {
@@ -333,17 +330,16 @@ class _Service1State extends State<Service1> {
                    }));
                 },
                 child: Container(
-                  height: 70,
-                  width: 170,
+                  height: 60,
+                  width: 150,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(25),
                     color: Colors.grey[400],
                   ),
                 
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 30,top: 20),
+                  child: Center(
                     child: Text("Schedule",style: 
-                    TextStyle(fontWeight: FontWeight.w900,fontSize: 25),),
+                    TextStyle(fontWeight: FontWeight.w900,fontSize: 20),),
                   ),
                 ),
               ),

@@ -69,7 +69,7 @@ class _Settings1State extends State<Settings1> {
                       icon: Icon(
                         Icons.settings,
                         color: Colors.white,
-                        size: 30,
+                        size: 23,
                       )),
                   Padding(
                     padding: const EdgeInsets.only(left: 50),
@@ -78,7 +78,7 @@ class _Settings1State extends State<Settings1> {
                       style: GoogleFonts.inknutAntiqua(
                         textStyle: const TextStyle(
                             color: Colors.white,
-                            fontSize: 30,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
@@ -90,7 +90,7 @@ class _Settings1State extends State<Settings1> {
         Padding(
             padding: const EdgeInsets.only(top: 75, left: 10, right: 10),
             child: Container(
-              height: 460,
+              height: 430,
               width: 400,
               decoration: BoxDecoration(
                 shape: BoxShape.rectangle,
@@ -106,12 +106,12 @@ class _Settings1State extends State<Settings1> {
                       children: [
                         Icon(
                           Icons.language,
-                          size: 35,
+                          size: 23,
                         ),
                         Text(
                           "  Language",
                           style: GoogleFonts.inknutAntiqua(
-                              fontSize: 25, fontWeight: FontWeight.w500),
+                              fontSize: 20, fontWeight: FontWeight.w500),
                         ),
 
                         // dropdown button
@@ -151,12 +151,12 @@ class _Settings1State extends State<Settings1> {
                           children: [
                             Icon(
                               Icons.lock,
-                              size: 35,
+                              size: 23,
                             ),
                             Text(
                               "  Change password",
                               style: GoogleFonts.inknutAntiqua(
-                                  fontSize: 25, fontWeight: FontWeight.w500),
+                                  fontSize: 20, fontWeight: FontWeight.w500),
                             ),
                           ]),
                     ),
@@ -177,12 +177,12 @@ class _Settings1State extends State<Settings1> {
                           children: [
                             Icon(
                               Icons.help,
-                              size: 35,
+                              size: 23,
                             ),
                             Text(
                               "  Help",
                               style: GoogleFonts.inknutAntiqua(
-                                  fontSize: 25, fontWeight: FontWeight.w500),
+                                  fontSize: 20, fontWeight: FontWeight.w500),
                             ),
                           ]),
                     ),
@@ -203,12 +203,12 @@ class _Settings1State extends State<Settings1> {
                           children: [
                             Icon(
                               Icons.co_present_outlined,
-                              size: 35,
+                              size: 23,
                             ),
                             Text(
                               "  About us",
                               style: GoogleFonts.inknutAntiqua(
-                                  fontSize: 25, fontWeight: FontWeight.w500),
+                                  fontSize: 20, fontWeight: FontWeight.w500),
                             ),
                           ]),
                     ),
@@ -228,12 +228,12 @@ class _Settings1State extends State<Settings1> {
                           children: [
                             Icon(
                               Icons.person_3_rounded,
-                              size: 35,
+                              size: 23,
                             ),
                             Text(
                               "  Profile",
                               style: GoogleFonts.inknutAntiqua(
-                                  fontSize: 25, fontWeight: FontWeight.w500),
+                                  fontSize: 20, fontWeight: FontWeight.w500),
                             ),
                           ]),
                     ),
@@ -253,12 +253,12 @@ class _Settings1State extends State<Settings1> {
                           children: [
                             Icon(
                               Icons.logout,
-                              size: 35,
+                              size: 23,
                             ),
                             Text(
                               "  Logout",
                               style: GoogleFonts.inknutAntiqua(
-                                  fontSize: 25, fontWeight: FontWeight.w500),
+                                  fontSize: 20, fontWeight: FontWeight.w500),
                             ),
                           ]),
                     ),

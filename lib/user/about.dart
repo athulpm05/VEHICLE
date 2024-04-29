@@ -25,7 +25,7 @@ class _AboutusState extends State<Aboutus> {
                   Navigator.pop(context);
                 },
                 icon: Icon(Icons.arrow_back_ios),
-                iconSize: 40,
+                iconSize: 23,
                 color: Colors.white,
               ),
               Divider(

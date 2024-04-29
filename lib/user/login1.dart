@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/user/forgetpassword.dart';
 import 'package:flutter_application_4/user/home.dart';
+import 'package:flutter_application_4/user/usersignup.dart';
 
 class Login1 extends StatefulWidget {
   const Login1({super.key});
@@ -27,12 +28,13 @@ class _Login1State extends State<Login1> {
         backgroundColor: Colors.grey[400],
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 340),
+            padding: const EdgeInsets.only(right: 300),
             child: IconButton(onPressed: (){
-
+          
               Navigator.pop(context);
             },
-             icon: Icon(Icons.arrow_back_ios),iconSize: 40,color: Colors.white,),
+             icon: Icon(Icons.arrow_back_ios),
+             iconSize: 23,color: Colors.white,),
              
           ),
           
@@ -45,16 +47,16 @@ class _Login1State extends State<Login1> {
             padding: const EdgeInsets.only(top: 150),
             child: Container(
               height: 60,
-              width: 350,
+              width: 320,
               child: Row(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
-                    child: Icon(Icons.email_outlined,color: Colors.grey,size: 29,),
+                    child: Icon(Icons.email_outlined,color: Colors.grey,size: 23,),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 90),
-                    child: Text("Email",style: TextStyle(fontSize: 25,color: Colors.grey),),
+                    padding: const EdgeInsets.only(left: 50),
+                    child: Text("Email",style: TextStyle(fontSize: 20,color: Colors.grey),),
                   )
                 ],
               ),
@@ -68,20 +70,20 @@ class _Login1State extends State<Login1> {
             padding: const EdgeInsets.only(top: 20),
             child: Container(
               height: 60,
-              width: 350,
+              width: 320,
               child: Row(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
-                    child: Icon(Icons.key_rounded,color: Colors.grey,size: 29,),
+                    child: Icon(Icons.key_rounded,color: Colors.grey,size: 23,),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 70),
-                    child: Text("Password",style: TextStyle(fontSize: 25,color: Colors.grey),),
+                    padding: const EdgeInsets.only(left: 50),
+                    child: Text("Password",style: TextStyle(fontSize: 20,color: Colors.grey),),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 55),
-                    child: Icon(Icons.visibility_off_sharp,color: Colors.black,size: 29,),
+                    padding: const EdgeInsets.only(left: 90),
+                    child: Icon(Icons.visibility_off_sharp,color: Colors.black,size: 23,),
                   )
                 ],
               ),
@@ -99,7 +101,7 @@ class _Login1State extends State<Login1> {
             },
 
                child: Text("Forget password ?",style:
-              TextStyle(color: Colors.white,fontSize: 22),)),
+              TextStyle(color: Colors.white,fontSize: 20),)),
           ),
 
           // third
@@ -117,7 +119,7 @@ class _Login1State extends State<Login1> {
                 width: width-50,
                 child: Center(
                   child: Text("Login",style: 
-                  TextStyle(fontSize: 25,color: Colors.white,
+                  TextStyle(fontSize: 20,color: Colors.white,
                    
                   fontWeight: FontWeight.bold),),
                 ),
@@ -128,15 +130,18 @@ class _Login1State extends State<Login1> {
            ),
 
            InkWell(
-            onTap: (){},
+            onTap: (){
+              Navigator.push(context,
+                 MaterialPageRoute(builder: (context)=>Usignup()));
+            },
              child: Padding(
-               padding: const EdgeInsets.only(top: 20),
+               padding: const EdgeInsets.only(top: 40),
                child: Container(
                 height: height/14,
                 width: width-50,
                 child: Center(
                   child: Text("Sign Up",style: 
-                  TextStyle(fontSize: 25,color: Colors.white,
+                  TextStyle(fontSize: 20,color: Colors.white,
                   fontWeight: FontWeight.bold),),
                 ),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),

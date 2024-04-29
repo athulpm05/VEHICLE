@@ -48,7 +48,7 @@ class _ManufactureState extends State<Manufacture> {
                 Navigator.pop(context);
               },
               icon: Icon(Icons.arrow_back_ios),
-              iconSize: 40,
+              iconSize: 23,
               color: Colors.white,
             ),
           ),
@@ -70,9 +70,9 @@ class _ManufactureState extends State<Manufacture> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(top: 20,left: 10,right: 10),
             child: Container(
-              height: 500,
+              height: 390,
               width: 420,
               decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
@@ -89,30 +89,30 @@ class _ManufactureState extends State<Manufacture> {
                       children: [
                         Icon(
                           Icons.construction_outlined,
-                          size: 30,
+                          size: 23,
                         ),
                         Text(
                           "  Manufacture",
                           style: TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.w500),
+                              fontSize: 20, fontWeight: FontWeight.w500),
                         )
                       ],
                     ),
                   ),
                   //
                   Padding(
-                    padding: const EdgeInsets.only(top: 50, left: 10),
+                    padding: const EdgeInsets.only(top: 15, left: 10),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Icon(
                           Icons.directions_car_filled,
-                          size: 38,
+                          size: 23,
                         ),
                         Text(
                           "  Vehicle name",
                           style: TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.w500),
+                              fontSize: 20, fontWeight: FontWeight.w500),
                         ),
 
                         //dropdown button
@@ -146,7 +146,7 @@ class _ManufactureState extends State<Manufacture> {
                         children: [
                           Icon(
                             Icons.format_list_numbered_rtl_rounded,
-                            size: 38,
+                            size: 23,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -154,12 +154,12 @@ class _ManufactureState extends State<Manufacture> {
                               Text(
                                 "  Registration number",
                                 style: TextStyle(
-                                    fontSize: 24, fontWeight: FontWeight.w500),
+                                    fontSize: 20, fontWeight: FontWeight.w500),
                               ),
                               Text(
                                 "   Eg : KL11 AF 1283",
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w500),
+                                    fontSize: 18, fontWeight: FontWeight.w500),
                               ),
                             ],
                           ),
@@ -178,12 +178,12 @@ class _ManufactureState extends State<Manufacture> {
                         children: [
                           Icon(
                             Icons.speed_rounded,
-                            size: 38,
+                            size: 23,
                           ),
                           Text(
                             "  Kilometers",
                             style: TextStyle(
-                                fontSize: 24, fontWeight: FontWeight.w500),
+                                fontSize: 20, fontWeight: FontWeight.w500),
                           ),
                         ]),
                   ),
@@ -199,7 +199,7 @@ class _ManufactureState extends State<Manufacture> {
                         children: [
                           Icon(
                             Icons.crib_sharp,
-                            size: 38,
+                            size: 23,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -207,12 +207,12 @@ class _ManufactureState extends State<Manufacture> {
                               Text(
                                 "  Manufacture type",
                                 style: TextStyle(
-                                    fontSize: 24, fontWeight: FontWeight.w500),
+                                    fontSize: 20, fontWeight: FontWeight.w500),
                               ),
                               Text(
                                 "   Eg : 2018",
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w500),
+                                    fontSize: 18, fontWeight: FontWeight.w500),
                               ),
                             ],
                           ),
@@ -230,12 +230,12 @@ class _ManufactureState extends State<Manufacture> {
                         children: [
                           Icon(
                             Icons.check_box,
-                            size: 38,
+                            size: 23,
                           ),
                           Text(
                             "  Discribe your complaint",
                             style: TextStyle(
-                                fontSize: 24, fontWeight: FontWeight.w500),
+                                fontSize: 20, fontWeight: FontWeight.w500),
                           ),
                         ]),
                   ),
@@ -252,19 +252,21 @@ class _ManufactureState extends State<Manufacture> {
                   return sheduletime();
                 }));
               },
-              child: Container(
-                height: 80,
-                width: 170,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  borderRadius: BorderRadius.circular(25),
-                  color: Colors.grey[400],
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 50, top: 20),
-                  child: Text(
-                    "Book",
-                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 28),
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Container(
+                  height: 60,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Book",
+                      style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+                    ),
                   ),
                 ),
               ),

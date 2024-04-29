@@ -53,7 +53,7 @@ class _Profile1State extends State<Profile1> {
                           Navigator.pop(context);
                         }, 
                        icon: Icon(Icons.arrow_back_ios),
-                       color: Colors.white,iconSize: 25,),
+                       color: Colors.white,iconSize: 23,),
 
                         IconButton(
                             onPressed: () {
@@ -64,7 +64,7 @@ class _Profile1State extends State<Profile1> {
                             icon: Icon(
                               Icons.density_medium_outlined,
                               color: Colors.white,
-                              size: 30,
+                              size: 23,
                             )),
 
                             
@@ -75,7 +75,7 @@ class _Profile1State extends State<Profile1> {
                             style: GoogleFonts.inknutAntiqua(
                               textStyle: const TextStyle(
                                   color: Colors.white,
-                                  fontSize: 30,
+                                  fontSize: 22,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -93,7 +93,7 @@ class _Profile1State extends State<Profile1> {
                               icon: Icon(
                                 Icons.notifications,
                                 color: Colors.white,
-                                size: 40,
+                                size: 23,
                               )),
                         )
                       ],
@@ -102,7 +102,7 @@ class _Profile1State extends State<Profile1> {
               ),
                 Divider(color: Colors.white,),
                 Padding(
-                padding: const EdgeInsets.only(top: 30, left: 18),
+                padding: const EdgeInsets.only(top: 30, left: 5),
                 child: Text(
                   "Near by mecahic",
                   style: GoogleFonts.inknutAntiqua(
@@ -120,7 +120,7 @@ class _Profile1State extends State<Profile1> {
                             },
                    child: Container(
                         height: 120,
-                        width: 350,
+                        width: 320,
                         decoration: BoxDecoration(
                             shape: BoxShape.rectangle,
                             color: Colors.grey[400],
@@ -135,17 +135,17 @@ class _Profile1State extends State<Profile1> {
                                   ,radius: 40,),
                               
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 30),
+                                    padding: const EdgeInsets.only(left: 30,top: 20),
                                     child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Arjun",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                          Text("8523561220",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                           Text("Exp:9 yeras",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                            Text("Fee:150",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                     
                                       ],
                                     ),
@@ -167,7 +167,7 @@ class _Profile1State extends State<Profile1> {
                             },
                       child: Container(
                         height: 120,
-                        width: 350,
+                        width: 320,
                         decoration: BoxDecoration(
                             shape: BoxShape.rectangle,
                             color: Colors.grey[400],
@@ -182,17 +182,17 @@ class _Profile1State extends State<Profile1> {
                                   ,radius: 40,),
                               
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 30),
+                                    padding: const EdgeInsets.only(left: 30,top: 20),
                                     child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Rahul",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                          Text("9685235677",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                           Text("Exp:7 yeras",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                            Text("Fee:180",style: 
-                                        TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                        TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                     
                                       ],
                                     ),
@@ -209,7 +209,7 @@ class _Profile1State extends State<Profile1> {
                     padding: const EdgeInsets.only(top: 50),
                     child: Container(
                       height: 120,
-                      width: 350,
+                      width: 320,
                       decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           color: Colors.grey[400],
@@ -224,17 +224,17 @@ class _Profile1State extends State<Profile1> {
                                 ,radius: 40,),
                             
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 30),
+                                  padding: const EdgeInsets.only(left: 30,top: 20),
                                   child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Manu",style: 
-                                      TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                      TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                        Text("8956235612",style: 
-                                      TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                      TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                         Text("Exp:8 yeras",style: 
-                                      TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                      TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                          Text("Fee:160",style: 
-                                      TextStyle(fontWeight: FontWeight.w500,fontSize:20 ),),
+                                      TextStyle(fontWeight: FontWeight.w500,fontSize:15 ),),
                                   
                                     ],
                                   ),

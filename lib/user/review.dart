@@ -2,9 +2,7 @@
 
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_application_4/user/settings.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -45,24 +43,37 @@ class _Review1State extends State<Review1> {
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Padding(
             padding: const EdgeInsets.only(top: 40, left: 10),
-            child: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Icon(Icons.arrow_back_ios),
-              iconSize: 40,
-              color: Colors.white,
+            child: Row(
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: Icon(Icons.arrow_back_ios),
+                  iconSize: 23,
+                  color: Colors.white,
+                ),
+              //review text
+                Padding(
+                        padding: const EdgeInsets.only(top: 10,left: 90),
+                        child: Text("Review",style:
+                         GoogleFonts.inknutAntiqua(textStyle: 
+                         TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),),
+                      )
+              ],
             ),
           ),
+          //text
+          
           Divider(
             color: Colors.white,
           ),
 
           //container trasperent
           Padding(
-              padding: const EdgeInsets.only(top: 75,left: 10,right: 10),
+              padding: const EdgeInsets.only(top: 30,left: 10,right: 10),
               child: Container(
-                height: 560,
+                height: 500,
                 width: 400,
                 decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
@@ -74,7 +85,7 @@ class _Review1State extends State<Review1> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(30),
+                      padding: const EdgeInsets.all(10),
                       child: SizedBox(
                         height: 60,
                         width: 340,
@@ -99,7 +110,7 @@ class _Review1State extends State<Review1> {
                                   " Email",
                                   style: GoogleFonts.inknutAntiqua(
                                       textStyle: TextStyle(
-                                          fontSize: 25,
+                                          fontSize: 20,
                                           fontWeight: FontWeight.bold)),
                                 ),
                               )),
@@ -111,7 +122,7 @@ class _Review1State extends State<Review1> {
                       " Add your review",
                       style: GoogleFonts.inknutAntiqua(
                           textStyle: TextStyle(
-                              fontSize: 25, fontWeight: FontWeight.bold)),
+                              fontSize: 20, fontWeight: FontWeight.bold)),
                     ),
                   ],
                 ),
@@ -123,13 +134,13 @@ class _Review1State extends State<Review1> {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Settings1()));
               },
                child: Padding(
-                 padding: const EdgeInsets.only(top: 39,left: 105),
+                 padding: const EdgeInsets.only(top: 39,left: 85),
                  child: Container(
                   height: 60,
                   width:200,
                   child: Center(
                     child: Text("Submit",style: GoogleFonts.inknutAntiqua(
-                       textStyle:  TextStyle(fontSize: 25,color: Colors.black,
+                       textStyle:  TextStyle(fontSize: 20,color: Colors.black,
                      
                     fontWeight: FontWeight.bold),),
                     )

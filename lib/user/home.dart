@@ -3,8 +3,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_4/user/UMA.dart';
 import 'package:flutter_application_4/user/problems.dart';
-import 'package:flutter_application_4/user/successpass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Homepage1 extends StatefulWidget {
@@ -53,17 +53,20 @@ class _Homepage1State extends State<Homepage1> {
                         icon: Icon(
                           Icons.density_medium_outlined,
                           color: Colors.white,
-                          size: 30,
+                          size: 20,
                         )),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 110),
-                      child: Text(
-                        "Home",
-                        style: GoogleFonts.inknutAntiqua(
-                          textStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 90),
+                        child: Text(
+                          "Home",
+                          style: GoogleFonts.inknutAntiqua(
+                            textStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                     ),
@@ -71,13 +74,14 @@ class _Homepage1State extends State<Homepage1> {
                       padding: const EdgeInsets.only(left: 93),
                       child: IconButton(
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>Successpass()));
+                            Navigator.push(context, 
+                            MaterialPageRoute(builder: (context)=>Uma1()));
                           },
 
                           icon: Icon(
                             Icons.arrow_back_ios,
                             color: Colors.white,
-                            size: 40,
+                            size: 20,
                           )),
                     )
                   ],
@@ -111,7 +115,7 @@ class _Homepage1State extends State<Homepage1> {
 
                   // ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 20,left: 20),
+                    padding: const EdgeInsets.only(top: 20,left: 13),
 
                     child: InkWell(
                       onTap: (){
@@ -119,7 +123,7 @@ class _Homepage1State extends State<Homepage1> {
                       },
                       child: Container(
                         height: 50,
-                        width: 330,
+                        width: 320,
                         decoration: BoxDecoration(
                           border: Border.all(width: 5,color: Colors.black),
                         ),
@@ -127,15 +131,15 @@ class _Homepage1State extends State<Homepage1> {
                         child: Stack(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 15),
+                              padding: const EdgeInsets.only(left: 15,top: 10),
                               child: Icon(
                                 Icons.search,
-                                size: 40,
+                                size: 22,
                                 color: Colors.white,
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 70),
+                              padding: const EdgeInsets.only(left: 70,top: 5),
                               child: Text(
                                 "Search",
                                 style: GoogleFonts.inknutAntiqua(
@@ -144,17 +148,17 @@ class _Homepage1State extends State<Homepage1> {
                                         ..style = PaintingStyle.stroke
                                         ..strokeWidth = 2
                                         ..color = Colors.black,
-                                      fontSize: 25),
+                                      fontSize: 21),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 70),
+                              padding: const EdgeInsets.only(left: 70,top: 5),
                       
                               child: Text('Search',
                                   style: GoogleFonts.inknutAntiqua(
                                     textStyle: TextStyle(
-                                      fontSize: 25,
+                                      fontSize: 21,
                       
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white, // Set the text color
@@ -168,9 +172,9 @@ class _Homepage1State extends State<Homepage1> {
                   ),
 
                   Padding(
-                    padding: const EdgeInsets.only(top: 100),
+                    padding: const EdgeInsets.only(top: 125,left: 40),
                     child: Text("Choose your vehicle",style: GoogleFonts.inknutAntiqua(
-                      textStyle: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
+                      textStyle: TextStyle(fontSize: 23,fontWeight: FontWeight.bold,
                       foreground: Paint()
                       ..style=PaintingStyle.stroke
                       ..strokeWidth = 2
@@ -181,11 +185,11 @@ class _Homepage1State extends State<Homepage1> {
 
                   //textsecond color
                   Padding(
-                    padding: const EdgeInsets.only(top: 100),
+                    padding: const EdgeInsets.only(top: 125,left: 40),
                     child: Text('Choose your vehicle',
                                 style: GoogleFonts.inknutAntiqua(
                                   textStyle: TextStyle(
-                                    fontSize: 30,
+                                    fontSize: 23,
                     
                                     fontWeight: FontWeight.bold,
                                     color: Colors.grey[300], // Set the text color
@@ -196,7 +200,7 @@ class _Homepage1State extends State<Homepage1> {
                   //  vehicles
                  
                   Padding(
-                    padding: const EdgeInsets.only(top: 200),
+                    padding: const EdgeInsets.only(top: 200,left: 10),
 
                     child: InkWell(
                       onTap: (){
@@ -204,16 +208,16 @@ class _Homepage1State extends State<Homepage1> {
                       },
                       child: Container(
                         height: 95,
-                        width: 345,
+                        width: 320,
                       
                         //listtile
                         child: Padding(
-                          padding: const EdgeInsets.only(top: 20,left: 10),
+                          padding: const EdgeInsets.only(top: 20,left: 25),
                           child: ListTile( 
                           title: Padding(
                             padding: const EdgeInsets.only(left: 40),
                             child: Text("Two wheeler",style: GoogleFonts.inknutAntiqua(
-                              textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),),
+                              textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),),
                           ),
                             // ClipRRect
                             leading: ClipRRect(
@@ -230,7 +234,7 @@ class _Homepage1State extends State<Homepage1> {
 
                   //three wheeler
                   Padding(
-                    padding: const EdgeInsets.only(top: 320),
+                    padding: const EdgeInsets.only(top: 320,left: 10),
                     
                     child: InkWell(
                        onTap: (){
@@ -238,16 +242,16 @@ class _Homepage1State extends State<Homepage1> {
                       },
                       child: Container(
                           height: 95,
-                          width: 345,
+                          width: 320,
                         
                           //listtile
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 20,left: 10),
+                            padding: const EdgeInsets.only(top: 20,left: 20),
                             child: ListTile( 
                             title: Padding(
                               padding: const EdgeInsets.only(left: 40),
                               child: Text("Three wheeler",style: GoogleFonts.inknutAntiqua(
-                                textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),),
+                                textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),),
                             ),
                               // ClipRRect
                               leading: ClipRRect(
@@ -264,7 +268,7 @@ class _Homepage1State extends State<Homepage1> {
 
                   //four wheeler
                    Padding(
-                    padding: const EdgeInsets.only(top: 440),
+                    padding: const EdgeInsets.only(top: 440,left: 10),
 
                     child: InkWell(
                        onTap: (){
@@ -272,16 +276,16 @@ class _Homepage1State extends State<Homepage1> {
                       },
                       child: Container(
                           height: 95,
-                          width: 345,
+                          width: 320,
                         
                           //listtile
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 20,left: 10),
+                            padding: const EdgeInsets.only(top: 20,left: 20),
                             child: ListTile( 
                             title: Padding(
                               padding: const EdgeInsets.only(left: 60),
                               child: Text("Four wheeler",style: GoogleFonts.inknutAntiqua(
-                                textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),),
+                                textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),),
                             ),
                               // ClipRRect
                               leading: ClipRRect(
@@ -298,7 +302,7 @@ class _Homepage1State extends State<Homepage1> {
 
                   //six wheeler
                    Padding(
-                    padding: const EdgeInsets.only(top: 560),
+                    padding: const EdgeInsets.only(top: 560,left: 10),
 
                     child: InkWell(
                        onTap: (){
@@ -306,16 +310,16 @@ class _Homepage1State extends State<Homepage1> {
                       },
                       child: Container(
                           height: 95,
-                          width: 345,
+                          width: 320,
                         
                           //listtile
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 20,left: 10),
+                            padding: const EdgeInsets.only(top: 20,left: 1),
                             child: ListTile( 
                             title: Padding(
                               padding: const EdgeInsets.only(left: 40),
                               child: Text("Six wheeler",style: GoogleFonts.inknutAntiqua(
-                                textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),),
+                                textStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,)),),
                             ),
                               // ClipRRect
                               leading: ClipRRect(

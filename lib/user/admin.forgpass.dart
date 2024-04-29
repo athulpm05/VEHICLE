@@ -1,22 +1,21 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last
-
+// ignore_for_file: camel_case_types, prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_4/user/resetpass.dart';
+import 'package:flutter_application_4/user/admin_resetpass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Userposition extends StatefulWidget {
-  const Userposition({super.key});
+class Adm_forgpass extends StatefulWidget {
+  const Adm_forgpass({super.key});
 
   @override
-  State<Userposition> createState() => _UserpositionState();
+  State<Adm_forgpass> createState() => _Adm_forgpassState();
 }
 
-class _UserpositionState extends State<Userposition> {
+class _Adm_forgpassState extends State<Adm_forgpass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+        backgroundColor: Colors.grey[400],
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.grey[400],
@@ -40,26 +39,47 @@ class _UserpositionState extends State<Userposition> {
         child: Column(
           children: [
              Divider(color: Colors.black,),
-             Padding(
-               padding: const EdgeInsets.all(8.0),
-               child: Text("Forget Password?",
-               
-               //google_font
-               
-               style: GoogleFonts.inknutAntiqua(textStyle: TextStyle(
-                fontSize: 23,
-                fontWeight: FontWeight.bold
-               ))),
-             ),
-        
-             Padding(
-               padding: const EdgeInsets.only(top: 150,left: 20),
-               child: Text("We' ll send a verification code this email or phone number",
-               style:  GoogleFonts.inknutAntiqua(textStyle: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w600
-               ))),
-             ),
+            Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 200, left: 20),
+                    child: Text(
+                        "We' ll send a verification code this email or phone number",
+                        style: GoogleFonts.inknutAntiqua(
+                            textStyle: TextStyle(
+                                fontSize: 22, fontWeight: FontWeight.w600))),
+                  ),
+                  // Implement the stroke
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70, top: 50),
+                    child: Text('Forget Password?',
+                        style: GoogleFonts.inknutAntiqua(
+                          textStyle: TextStyle(
+                            fontSize: 23,
+          
+                            fontWeight: FontWeight.bold,
+                            foreground: Paint()
+                              ..style = PaintingStyle.stroke
+                              ..strokeWidth = 3.5
+                              ..color = Colors.orange, // Set the stroke color
+                          ),
+                        )),
+                  ),
+                  // The text inside
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70, top: 50),
+                    child: Text('Forget Password?',
+                        style: GoogleFonts.inknutAntiqua(
+                          textStyle: TextStyle(
+                            fontSize: 23,
+          
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black, // Set the text color
+                          ),
+                        )),
+                  ),
+                ],
+              ) ,
         
              //SizedBox
              Padding(
@@ -97,7 +117,7 @@ class _UserpositionState extends State<Userposition> {
              //inkwell button
               InkWell(
               onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Resetpass()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Adm_resetpass()));
               },
                child: Padding(
                  padding: const EdgeInsets.only(top: 70),

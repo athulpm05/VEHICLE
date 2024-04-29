@@ -1,8 +1,7 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, camel_case_types
 
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/user/payment.dart';
 
@@ -46,7 +45,7 @@ class _sheduletimeState extends State<sheduletime> {
                 Navigator.pop(context);
               },
               icon: Icon(Icons.arrow_back_ios),
-              iconSize: 40,
+              iconSize: 23,
               color: Colors.white,
             ),
           ),

@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/user/login1.dart';
@@ -26,23 +25,24 @@ class _Logout1State extends State<Logout1> {
         
                 Navigator.pop(context);
               },
-               icon: Icon(Icons.arrow_back_ios),iconSize: 40,color: Colors.white,),
+               icon: Icon(Icons.arrow_back_ios),
+               iconSize: 23,color: Colors.white,),
                Divider(indent:0,),
 
                
                 
                 Padding(
-                  padding: const EdgeInsets.only(top: 50,left: 25),
+                  padding: const EdgeInsets.only(top: 50,left: 13),
                   child: Text("Are you sure want to logout",
                    style:GoogleFonts.inknutAntiqua(textStyle: 
-                   TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.w800))),
+                   TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w800))),
                 ),
                 //inkwell button
                 
-               Row(
+               Row(mainAxisAlignment: MainAxisAlignment.center,
                  children: [
                    Padding(
-                     padding: const EdgeInsets.only(left: 50,top: 100),
+                     padding: const EdgeInsets.only(left: 0,top: 100),
                      child: InkWell(
                        onTap: () => Navigator.push(context, 
                      MaterialPageRoute(builder: (context) =>Login1() ,)),
@@ -55,7 +55,7 @@ class _Logout1State extends State<Logout1> {
                           child: Text("Yes ",
                              style:GoogleFonts.inknutAntiqua(textStyle: 
                              TextStyle(color: Colors.black,
-                             fontSize: 25,fontWeight: FontWeight.w800))),
+                             fontSize: 20,fontWeight: FontWeight.w800))),
                         ) ,
                        ),
                      ),
@@ -65,7 +65,7 @@ class _Logout1State extends State<Logout1> {
                     //  onTap: () => Navigator.push(context, 
                     //  MaterialPageRoute(builder: (context) => ,)),
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 100,top: 100),
+                        padding: const EdgeInsets.only(left: 50,top: 100),
                         child: Container(
                          height: 35,
                          width: 105,
@@ -75,7 +75,7 @@ class _Logout1State extends State<Logout1> {
                            child: Text("No ",
                               style:GoogleFonts.inknutAntiqua(textStyle: 
                               TextStyle(color: Colors.black,
-                              fontSize: 25,fontWeight: FontWeight.w800))),
+                              fontSize: 20,fontWeight: FontWeight.w800))),
                          ) ,
                         ),
                       ),

@@ -33,11 +33,11 @@ class _NextState extends State<Next> {
               },
               child: Container(
                 height: 60,
-                width: 180,
+                width: 150,
                 child: Row(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Next",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40,color: Colors.white),),
-                    Icon(Icons.arrow_forward_ios,size: 45,weight: 100,color: Colors.white,)
+                    Text("Next",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white),),
+                    Icon(Icons.arrow_forward_ios,size: 23,weight: 100,color: Colors.white,)
                   ],
                 ),
                 decoration:  BoxDecoration(color:const Color.fromARGB(255, 51, 49, 49),borderRadius: BorderRadius.circular(20),

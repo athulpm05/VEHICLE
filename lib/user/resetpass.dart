@@ -21,117 +21,123 @@ class _ResetpassState extends State<Resetpass> {
         backgroundColor: Colors.grey[400],
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 340),
+            padding: const EdgeInsets.only(right: 300),
             child: IconButton(onPressed: (){
               Navigator.pop(context);
             },
-             icon: Icon(Icons.arrow_back_ios),iconSize: 40,color: Colors.white,),
+             icon: Icon(Icons.arrow_back_ios),
+             iconSize: 23,color: Colors.white,),
              
           ),
           
         ],
       ),
-      body: Column(
-        children: [
-          Divider(color: Colors.black,),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text("Reset your Password", 
-                 
-                 //google_font
-                 
-                 style: GoogleFonts.inknutAntiqua(textStyle: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold
-                 ))),
-          ),
-          //sizedbox
-          Padding(
-            padding: const EdgeInsets.only(top: 150),
-            child: SizedBox(
-              height: 60,
-              width: 350,
-              child: TextFormField( decoration: InputDecoration(
-                      suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.visibility_off_outlined)),
-                      prefixIcon: Icon(Icons.lock),
-                      fillColor: Colors.white,
-                      filled: true,
-            
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15)
-                    ),
-                    border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15)
-                    ),
-            
-                    //label text
-                    label: Center(
-                      child: Text("New Password",
-                      style: GoogleFonts.inknutAntiqua(
-                         textStyle: TextStyle(fontSize: 20)
-                      ),),
-                    )
-                    ),),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Divider(color: Colors.black,),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Reset your Password", 
+                   
+                   //google_font
+                   
+                   style: GoogleFonts.inknutAntiqua(textStyle: TextStyle(
+                    fontSize: 23,
+                    fontWeight: FontWeight.bold
+                   ))),
             ),
-          ),
-
-
-           Padding(
-             padding: const EdgeInsets.only(top: 60),
-             child: SizedBox(
-              height: 60,
-              width: 350,
-              child: TextFormField( decoration: InputDecoration(
-                
-                      suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.visibility_off_outlined)),
-                      prefixIcon: Icon(Icons.lock_clock_sharp),
-                      fillColor: Colors.white,
-                      filled: true,
-             
-                    focusedBorder: OutlineInputBorder(
+            //sizedbox
+            Padding(
+              padding: const EdgeInsets.only(top: 120),
+              child: SizedBox(
+                height: 60,
+                width: 320,
+                child: TextFormField( decoration: InputDecoration(
+                      
+                        suffixIcon: IconButton(onPressed: (){},
+                         icon: Icon(Icons.visibility_off_outlined)),
+                        prefixIcon: Icon(Icons.lock),
+                        fillColor: Colors.white,
+                        filled: true,
+              
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15)
+                      ),
+                      border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15)
-                    ),
-                    border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15)
-                    ),
-             
-                    //label text
-                    label: Center(
-                      child: Text("Confirm Password",
-                      style: GoogleFonts.inknutAntiqua(
-                         textStyle: TextStyle(fontSize: 20)
+                      ),
+              
+                      //label text
+                      label: Center(
+                        child: Text("New Password",
+                        style: GoogleFonts.inknutAntiqua(
+                           textStyle: TextStyle(fontSize: 19)
+                        ),),
+                      )
                       ),),
-                    )
-                    ),),
-                       ),
-           ),
-
-           //inkwell button
-            InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Successpass()));
-              },
-              child: Padding(
-                padding: const EdgeInsets.only(top: 100),
-                child: Container(
-                  height: 60,
-                  width: 360,
-                  child: Row(mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text("Update",
-                    style: GoogleFonts.inknutAntiqua(textStyle: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white
-                       ))),                  ],
-                  ),
-                  decoration:  BoxDecoration(color:const Color.fromARGB(255, 51, 49, 49),borderRadius: BorderRadius.circular(20),
-                   ),
-                ),
               ),
             ),
-        ],
         
+        
+             Padding(
+               padding: const EdgeInsets.only(top: 60),
+               child: SizedBox(
+                height: 60,
+                width: 320,
+                child: TextFormField( decoration: InputDecoration(
+                  
+                        suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.visibility_off_outlined)),
+                        prefixIcon: Icon(Icons.lock_clock_sharp),
+                        fillColor: Colors.white,
+                        filled: true,
+               
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15)
+                      ),
+                      border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15)
+                      ),
+               
+                      //label text
+                      label: Center(
+                        child: Text("Confirm Password",
+                        style: GoogleFonts.inknutAntiqua(
+                           textStyle: TextStyle(fontSize: 18)
+                        ),),
+                      )
+                      ),),
+                         ),
+             ),
+        
+             //inkwell button
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Successpass()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 100),
+                  child: Container(
+                    height: 60,
+                    width: 320,
+                    child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Update",
+                      style: GoogleFonts.inknutAntiqua(textStyle: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white
+                         ))),                  ],
+                    ),
+                    decoration:  BoxDecoration(color:const Color.fromARGB(255, 51, 49, 49),borderRadius: BorderRadius.circular(20),
+                     ),
+                  ),
+                ),
+              ),
+          ],
+          
+        ),
       ),
     );
   }

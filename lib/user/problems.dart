@@ -50,7 +50,7 @@ class _ProblemsState extends State<Problems> {
                     },
                     icon: Icon(
                       Icons.arrow_back_ios,
-                      size: 40,
+                      size: 23,
                       color: Colors.white,
                     )),
               ),
@@ -98,12 +98,12 @@ class _ProblemsState extends State<Problems> {
                       children: [
                         Icon(
                           Icons.location_on_outlined,
-                          size: 30,
+                          size: 25,
                         ),
                         Text(
                           "Location",
                           style: TextStyle(
-                              fontWeight: FontWeight.w600, fontSize: 30),
+                              fontWeight: FontWeight.w600, fontSize: 25),
                         )
                       ],
                     ),
@@ -122,13 +122,13 @@ class _ProblemsState extends State<Problems> {
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile1()));
                   },
                   child: Container(
-                    height: 75,
-                    width: 213,
+                    height: 60,
+                    width: 200,
                     child:  Center(
                       child: Text(
                               "Submit",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 30),
+                                  fontWeight: FontWeight.bold, fontSize: 26),
                             ),
                     ),
                   

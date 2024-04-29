@@ -2,11 +2,7 @@
 
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_application_4/user/manufacture.dart';
 import 'package:flutter_application_4/user/services.dart';
 
 class Calling1 extends StatefulWidget {
@@ -52,7 +48,7 @@ class _Calling1State extends State<Calling1> {
                 Navigator.pop(context);
               },
               icon: Icon(Icons.arrow_back_ios),
-              iconSize: 40,
+              iconSize: 23,
               color: Colors.white,
             ),
           ),
@@ -93,7 +89,7 @@ class _Calling1State extends State<Calling1> {
                       Text(
                         "Arjun",
                         style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 25),
+                            fontWeight: FontWeight.w600, fontSize: 20),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 65),
@@ -103,11 +99,11 @@ class _Calling1State extends State<Calling1> {
                             Text(
                               "Ringing ",
                               style: TextStyle(
-                                  fontWeight: FontWeight.w600, fontSize: 25),
+                                  fontWeight: FontWeight.w600, fontSize: 20),
                             ),
                             Icon(
                               Icons.phone,
-                              size: 32,
+                              size: 25,
                             )
                           ],
                         ),
