@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 
 import 'dart:ui';
 
@@ -39,7 +39,7 @@ class _Settings1State extends State<Settings1> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
                 child: Container(
-                  color: Colors.white.withOpacity(0.3),
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ),
             ),

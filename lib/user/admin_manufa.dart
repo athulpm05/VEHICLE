@@ -29,7 +29,7 @@ class _Admin_mafureState extends State<Admin_mafure> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
                 child: Container(
-                  color: Colors.white.withOpacity(0.3),
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ),
             ),
@@ -145,7 +145,7 @@ class _Admin_mafureState extends State<Admin_mafure> {
             width: 400,
             decoration: BoxDecoration(
                 shape: BoxShape.rectangle,
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withOpacity(0.4),
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.only(top: 10, left: 20),
@@ -326,7 +326,7 @@ class _Admin_mafureState extends State<Admin_mafure> {
                   child: Center(
                     child: Text(
                       "Save",
-                      style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+                      style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
                     ),
                   ),
                 ),

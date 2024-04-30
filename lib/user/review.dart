@@ -31,7 +31,7 @@ class _Review1State extends State<Review1> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
                 child: Container(
-                  color: Colors.white.withOpacity(0.3),
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ),
             ),

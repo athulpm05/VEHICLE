@@ -32,7 +32,7 @@ class _Profile1State extends State<Profile1> {
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
                     child: Container(
-                      color: Colors.white.withOpacity(0.3),
+                      color: Colors.black.withOpacity(0.3),
                     ),
                   ),
                 ),
@@ -107,7 +107,7 @@ class _Profile1State extends State<Profile1> {
                   "Near by mecahic",
                   style: GoogleFonts.inknutAntiqua(
                       textStyle:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.white)),
                 ),
               ),
               //first one

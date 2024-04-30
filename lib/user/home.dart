@@ -31,7 +31,7 @@ class _Homepage1State extends State<Homepage1> {
               fit: BoxFit.fitHeight,),
               ClipRRect(
                 child: BackdropFilter(filter: ImageFilter.blur(sigmaX: 4,sigmaY: 4),
-                child: Container(color: Colors.white.withOpacity(0.3)),),
+                child: Container(color: Colors.black.withOpacity(0.3)),),
                 
               )
               ],
@@ -125,7 +125,7 @@ class _Homepage1State extends State<Homepage1> {
                         height: 50,
                         width: 320,
                         decoration: BoxDecoration(
-                          border: Border.all(width: 5,color: Colors.black),
+                          border: Border.all(width: 5,color: Colors.white),
                         ),
                         
                         child: Stack(

@@ -28,7 +28,7 @@ class _Mec_frgpassState extends State<Mec_frgpass> {
               ClipRRect(
                 child: BackdropFilter(
                   filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
-                  child: Container(color: Colors.white.withOpacity(0.3)),
+                  child: Container(color: Colors.black.withOpacity(0.3)),
                 ),
               )
             ])),
@@ -57,7 +57,7 @@ class _Mec_frgpassState extends State<Mec_frgpass> {
                         "We' ll send a verification code this email or phone number",
                         style: GoogleFonts.inknutAntiqua(
                             textStyle: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.w600))),
+                                fontSize: 22, fontWeight: FontWeight.w600,color: Colors.white))),
                   ),
                   // Implement the stroke
                   Padding(

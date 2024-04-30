@@ -30,7 +30,7 @@ class _sheduletimeState extends State<sheduletime> {
                 child: BackdropFilter(
                   filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
                   child: Container(
-                    color: Colors.white.withOpacity(0.3),
+                    color: Colors.black.withOpacity(0.3),
                   ),
                 ),
               ),
@@ -52,46 +52,194 @@ class _sheduletimeState extends State<sheduletime> {
           Divider(
             color: Colors.white,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 60,
-                width: 320,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  borderRadius: BorderRadius.circular(25),
-                  color: Colors.grey[400],
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 50, top: 10),
-                      child: Text(
-                        "Choose your date",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w400, fontSize: 20),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 50, top: 10),
-                      child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.calendar_today_outlined)),
-                    )
-                  ],
-                ),
-              ),
-            ],
-          ),
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 40),
-            child: Text(
-              "Choose your slote",
-              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 20,color: Colors.white),
+            padding: const EdgeInsets.only(top: 100),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 60,
+                  width: 320,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 50, top: 10),
+                        child: Text(
+                          "Choose your date",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w800, fontSize: 20),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 50, top: 10),
+                        child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.calendar_today_outlined)),
+                      )
+                    ],
+                  ),
+                ),
+              ],
             ),
           ),
-          //inkwell
+          Padding(
+            padding: const EdgeInsets.only(left: 45, top: 40),
+            child: Text(
+              "Choose your slote",
+              style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 20,
+                  color: Colors.white),
+            ),
+          ),
+
+          //time &container
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 30,right: 70),
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "09:00 Am",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              ),
+
+              //2nd container
+
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "10:30 Am",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+          //second row contaner
+            Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 30,right: 70),
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "12:00 Pm",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              ),
+
+              //2nd container
+
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "02:00 Pm",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+
+          //3rd row
+            Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 30,right: 70),
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "04:00 Pm",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              ),
+
+              //2nd container
+
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[400],
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "05:00 Pm",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+
+          //inkwell button
+          
         ]),
         Padding(
           padding: const EdgeInsets.only(bottom: 50),
@@ -103,18 +251,17 @@ class _sheduletimeState extends State<sheduletime> {
                     MaterialPageRoute(builder: (context) => Payment1()));
               },
               child: Container(
-                height: 70,
-                width: 200,
+                height: 50,
+                width: 150,
                 decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(25),
                   color: Colors.grey[400],
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 45, top: 15),
+                child: Center(
                   child: Text(
-                    "continue",
-                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 28),
+                    "Continue",
+                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20),
                   ),
                 ),
               ),

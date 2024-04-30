@@ -30,7 +30,7 @@ class _Mec_manufature1State extends State<Mec_manufature1> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
                 child: Container(
-                  color: Colors.white.withOpacity(0.3),
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ),
             ),
@@ -146,7 +146,7 @@ class _Mec_manufature1State extends State<Mec_manufature1> {
             width: 400,
             decoration: BoxDecoration(
                 shape: BoxShape.rectangle,
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withOpacity(0.4),
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.only(top: 10, left: 20),
